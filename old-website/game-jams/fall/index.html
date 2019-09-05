@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/w3.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../css/games.css">
+    <link rel="stylesheet" href="../../css/embed.css">
+</head>
+<body class="background">
+    <div class="w3-main w3-content w3-padding">
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-container w3-center">
+                <h1>Fall</h1>
+            </div>
+            <div class="w3-row">
+                <div class="w3-half">
+                    <a href="i/screen1.png"><img src="i/m/screen1.png" width="100%"></a>
+                </div>
+                <div class="w3-half">
+                    <a href="i/screen2.png"><img src="i/m/screen2.png" width="100%"></a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-container w3-center">
+                <h2>About</h2>
+                <p>Fall was created at TOJam 6 in 2011. It is a physics based puzzle platformer. You must work your way to the level exit by navigating changing gravity fields and dodging deadly hazards. There are collectible dots, and floating particles in the gravity fields to help you navigate. It also includes a level editor so you can make your own levels.</p>
+            </div>
+        </div>
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <a href="i/screen3.png"><img src="i/m/screen3.png" width="100%"></a>
+                </div>
+                <div class="w3-half">
+                    <a href="i/screen4.png"><img src="i/m/screen4.png" width="100%"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-container w3-center">
+                <h2>Play It</h2>
+                <p>You can find the latest source code for Fall on github <a href="https://github.com/TeamAwesomeTOJam/fall">here</a>, and an archive <a href="fall.tar.gz">here</a>.</p>
+                <p>To play on Windows first install <a href="https://www.python.org/ftp/python/2.7.12/python-2.7.12.msi">32bit python 2.7</a>, then <a href="http://pygame.org">pygame</a>, run main.py</p>
+                <p>To play on Linux install pygame from your package manager, then run main.py.</p>
+            </div>
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <a href="i/screen5.png"><img src="i/m/screen5.png" width="100%"></a>
+                </div>
+                <div class="w3-half">
+                    <a href="i/screen6.png"><img src="i/m/screen6.png" width="100%"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-container w3-center">
+                <h2>Postmortem</h2>
+                <p>Fall is pretty fun, the platforming feels good and the levels are challenging and satisfying to complete. There are however a couple of flaws. It is difficult to know where the boundaries of the altered gravity fields are. The floating particles are designed to help with this, and they are visually pleasing, however they don't do a perfect job. Another solution could be to draw a vector field for the gravity.</p>
+                <p>There is also an issue with the controls when transitioning to an opposite gravity field. If the controls are relative to the screen then when making an upside u-turn the player wants to keep holding the same direction, but will end up bouncing back and forth. If the controls are relative to the player then when entering an upside down gravity field the player will reverse direction unintentionally. We tried to solve this by using a combination and changing in a smart way, however it doesn't work perfectly and the player will occasionally keep switching directions while holding one movement button.</p>
+                <p>Fall introduced the stick man animation system later used in <a href="../winter-wizard-jam/">Winter Wizard Jam</a>.</p>
+            </div>
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <a href="i/screen7.png"><img src="i/m/screen7.png" width="100%"></a>
+                </div>
+                <div class="w3-half">
+                    <a href="i/screen8.png"><img src="i/m/screen8.png" width="100%"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-container w3-center">
+                <h2>Credits</h2>
+                <h3>Design and Programming</h3>
+                <p>Daniel Lister</p>
+                <p>Jonathan Doda</p>
+                <p>Michael Tao</p>
+                <h3>Sound and Music</h3>
+                <p>Troy Morrissey</p>
+                <h3>Technology</h3>
+                <p><a href="https://www.python.org/">Python</a></p>
+                <p><a href="http://www.pygame.org">Pygame</a></p>
+                <p><a href="http://www.pymunk.org/">Pymunk</a></p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

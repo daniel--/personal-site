@@ -1,0 +1,23 @@
+.w3-main{
+    max-width:1200px;
+    margin-top:50px
+}
+
+.background{
+    background-color: #ABDCD6;
+}
+
+.card{
+    background-color: #FFFCEC;
+    color: #333333;
+}
+
+.card-card{
+    background-color: #EB593C;
+}
+
+h1.big{
+    font-size: 4em;
+}
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/w3.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../css/games.css">
+    <link rel="stylesheet" href="../../css/embed.css">
+</head>
+<body class="background">
+    <div class="w3-main w3-content w3-padding">
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-container w3-center">
+                <h1>Scale</h1>
+            </div>
+            <div class="w3-row">
+                <div class="w3-half">
+                    <a href="i/introscr.jpg"><img src="i/m/introscr.jpg" width="100%"></a>
+                </div>
+                <div class="w3-half">
+                    <a href="i/scale1.png"><img src="i/m/scale1.png" width="100%"></a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-container w3-center">
+                <h2>About</h2>
+                <p>Scale was created at TOJam 4 in 2009. The theme for the jam was scale. The theme lead us to the idea of a puzzle platformer where the primary mechanic is the ability to change the scale of the world in a dramatic way. The surprise of shrinking down to fit under a wall only to find an entire section of platforming in what looked like a crack is a unique experience. Due to time limitations (it was created in two days) we used a physics engine to drive the gameplay and many of the puzzles. While this allowed for some interesting puzzles many players find it tricky to play a platformer that does not allow for mid-air changes in direction. Overall this the game was quite successful (It won best use of theme) and is the favorite game of those I have worked on.</p>
+            </div>
+        </div>
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="video-container video-container-60">
+                        <iframe src="https://www.youtube.com/embed/mcL1n7a90rQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <a href="i/scale2.png"><img src="i/m/scale2.png" width="100%"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-container w3-center">
+                <h2>Play It</h2>
+                <p>You can find the latest source code for Scale on github <a href="https://github.com/TeamAwesomeTOJam/Scale">here</a>, and an archive <a href="scale.tar.gz">here</a>.</p>
+                <p>Unfortunatly the version of pymunk included is only compiled for 32-bit windows and Linux. If anyone can find the chipmunk source required to compile for 64-bit it would be greatly appreciated.</p>
+                <p>To play on Windows first install <a href="https://www.python.org/ftp/python/2.7.12/python-2.7.12.msi">32bit python 2.7</a>, then <a href="http://pygame.org">pygame</a>, finally run main.py</p>
+                <p>I haven't run the game on Linux since it was developed because it requires a 32-bit instillation but it should be enough to install pygame from your package manager and run main.py.</p>
+            </div>
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <a href="i/zoom.png"><img src="i/zoom.png" width="100%"></a>
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-container w3-center">
+                <h2>Reception</h2>
+                <p>The game was quite well received. It won best use of theme at the TOJam arcade. You can see favourable reviews on its TOJam page <a href="http://www.tojam.ca/games_2009/scale.asp">here</a>, and The Art of Game <a href="https://artofgame.wordpress.com/2009/08/18/the-games-of-tojam-4-part-8/">here</a>.</p>
+            </div>
+        </div>
+        
+        <div class="=w3-card-4 card w3-margin">
+            <a href="i/SCALE.gif"><img src="i/SCALE.gif" width="100%"></a>
+        </div>
+        
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-container w3-center">
+                <h2>Postmortem</h2>
+                <p>There were originally plans to include other mechanics involving enemies and obstacles and other puzzle elements that would make interesting use of the scaling mechanic however the tighter than usual deadline (Scale was made in 1.5 days rather than the usual 3 for TOJam) prevented their implementation. I believe this ultimately benefited the game. With only enough time to implement the core scaling mechanic the game has a fucus and consistency that would not likely have been achieved in a game jam. That said I believe there is a lot of potential space to explore and the game could be fleshed out into a fully fledged platformer</p>
+                <p>The one area that didn't work as well as hoped is the physics engine. While it allowed for a quick development and some interesting puzzles, many players found it frustrating. People are used to the standard Mario style platformer physics where movement in the air is under player control. Our implementation lacks this, opting instead for a realistic model where once you have left the ground your trajectory is determined. It would require a redesign of many of the puzzles but the game would most likely benefit from a standard platformer physics implementation.</p>
+            </div>
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <a href="i/scale3.png"><img src="i/m/scale3.png" width="100%"></a>
+                </div>
+                <div class="w3-half">
+                    <a href="i/scale4.png"><img src="i/m/scale4.png" width="100%"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-card-4 card w3-margin">
+            <div class="w3-container w3-center">
+                <h2>Credits</h2>
+                <h3>Design and Programming</h3>
+                <p>Daniel Lister</p>
+                <p>Andrej Karpathy</p>
+                <h3>Technology</h3>
+                <p><a href="https://www.python.org/">Python</a></p>
+                <p><a href="http://www.pygame.org">Pygame</a></p>
+                <p><a href="http://www.pymunk.org/">Pymunk</a></p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
