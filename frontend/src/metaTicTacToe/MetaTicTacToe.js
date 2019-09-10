@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SubGame from "./SubGame";
 import { calculateWinner, calculateSubGameWinner } from "./winner";
-import { Button, Grid, Accordion } from "semantic-ui-react";
+import { Button, Grid, Accordion, Header } from "semantic-ui-react";
 import "./MetaTicTacToe.css";
 
 const emptyBoard = [...Array(9)].map(() => Array(9).fill(null));
@@ -64,6 +64,7 @@ export default function MetaTicTacToe() {
 
   return (
     <Grid centered>
+      <Header>Meta Tic Tac Toe</Header>
       <Grid.Row>
         <div className="game">
           <div className="meta-board">
