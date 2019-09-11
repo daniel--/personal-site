@@ -8,6 +8,7 @@ import TopBar from "./topBar/ToBar";
 import Resume from "./resume/Resume";
 
 import { pdfjs } from "react-pdf";
+import Masters from "./masters/Masters";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/resume">
             <Resume />
+          </Route>
+          <Route path="/masters">
+            <Masters></Masters>
           </Route>
         </Switch>
       </Container>
