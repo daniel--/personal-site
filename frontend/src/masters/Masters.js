@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Divider } from "semantic-ui-react";
+import { Header } from "semantic-ui-react";
 
 import thesisPdf from "./thesis.pdf";
 import SimplePdfView from "../simplePdfView/SimplePdfView";
@@ -17,13 +17,12 @@ export default function Masters() {
           Sam Toueg
         </a>{" "}
         and <a href="http://www.cs.toronto.edu/%7Evassos/">Vassos Hadzilacos</a>
-        . My reasearch was in Theory of{" "}
+        . My research was in Theory of{" "}
         <a href="https://en.wikipedia.org/wiki/Distributed_computing">
           Distributed Computing
         </a>
         .
       </p>
-      {/* <Divider></Divider> */}
       <Header>Thesis</Header>
       <p>
         My thesis, titled A Pedagogical Presentation of the BG-Simulation,
