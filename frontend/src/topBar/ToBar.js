@@ -1,6 +1,14 @@
 import React from "react";
-import { Menu, Container } from "semantic-ui-react";
+import { Menu, Container, Responsive, Dropdown } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+
+const menuItems = [
+  { name: "Meta Tic Tac Toe", url: "/meta-tic-tac-toe" },
+  { name: "Resume", url: "/resume" },
+  { name: "Game Jams", url: "/game-jams" },
+  { name: "Masters Degree", url: "/masters" },
+  { name: "This Site", url: "/this-site" }
+];
 
 export default function TobBar() {
   return (
@@ -9,21 +17,24 @@ export default function TobBar() {
         <Menu.Item as={Link} header to="/">
           Daniel Lister
         </Menu.Item>
-        <Menu.Item as={Link} to="/meta-tic-tac-toe">
-          Meta Tic Tac Toe
-        </Menu.Item>
-        <Menu.Item as={Link} to="/resume">
-          Resume
-        </Menu.Item>
-        <Menu.Item as={Link} to="/game-jams">
-          Game Jams
-        </Menu.Item>
-        <Menu.Item as={Link} to="/masters">
-          Masters Degree
-        </Menu.Item>
-        <Menu.Item as={Link} to="/this-site">
-          This Site
-        </Menu.Item>
+        <Responsive {...Responsive.onlyMobile}>
+          <Dropdown simple item icon="bars">
+            <Dropdown.Menu>
+              {menuItems.map(item => (
+                <Dropdown.Item key={item.url} as={Link} to={item.url}>
+                  {item.name}
+                </Dropdown.Item>
+              ))}
+            </Dropdown.Menu>
+          </Dropdown>
+        </Responsive>
+        {menuItems.map(item => (
+          <Responsive key={item.url} minWidth={Responsive.onlyTablet.minWidth}>
+            <Menu.Item as={Link} to={item.url}>
+              {item.name}
+            </Menu.Item>
+          </Responsive>
+        ))}
       </Container>
     </Menu>
   );
