@@ -14,7 +14,8 @@ export default function ThisSite() {
         <a href="https://reacttraining.com/react-router/web/guides/quick-start">
           React Router
         </a>{" "}
-        to manage urls. It is hosted on GitHub pages.
+        to manage urls. It is hosted AWS. You can find the source code on{" "}
+        <a href="https://github.com/daniel--/personal-site">GitHub</a>.
       </p>
     </>
   );

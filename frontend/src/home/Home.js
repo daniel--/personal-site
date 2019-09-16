@@ -24,6 +24,9 @@ export default function Home() {
         University of Toronto and a <Link to={"masters"}>master degree</Link> in
         computer science also from the University of Toronto.
       </p>
+      <p>
+        My GitHub is <a href="https://github.com/daniel--">here</a>.
+      </p>
     </>
   );
 }
