@@ -9,8 +9,8 @@ export default function Home() {
       <p>
         Hi, I'm Daniel, a software developer living in Toronto Canada. I'm a
         fullstack web developer fluent in Python and React. I also have
-        experience working with high performance scientific computing. Check out
-        more details in my <Link to={"resume"}>Resume</Link>.
+        experience working on high performance scientific computing software.
+        Check out more details in my <Link to={"resume"}>resume</Link>.
       </p>
       <p>
         I have a love of game design and development and have participated in
@@ -26,6 +26,10 @@ export default function Home() {
       </p>
       <p>
         My GitHub is <a href="https://github.com/daniel--">here</a>.
+      </p>
+      <p>
+        You can reach me at{" "}
+        <a href="mailto:dan.lister@gmail.com">dan.lister@gmail.com</a>.
       </p>
     </>
   );
